@@ -1,0 +1,56 @@
+update:
+  on-join: true
+  on-world-change: true
+  on-teleport: true
+  on-respawn: true
+
+  # Sicherheits-Refresh, falls dein Minigame intern nichts triggert
+  periodic-refresh:
+    enabled: true
+    ticks: 100
+
+defaults:
+  gamemode: "Lobby"
+
+  discord-rpc:
+    enabled: true
+    mode: "simple" # simple, with_start, with_end, reset
+    text: "Lobby"
+    offset-seconds: 0
+
+worlds:
+  world:
+    gamemode: "Survival"
+
+    discord-rpc:
+      enabled: true
+      mode: "simple"
+      text: "Survival"
+      offset-seconds: 0
+
+  world_nether:
+    gamemode: "Nether"
+
+    discord-rpc:
+      enabled: true
+      mode: "with_start"
+      text: "Nether"
+      offset-seconds: 0
+
+  minigame_arena:
+    gamemode: "BedWars"
+
+    discord-rpc:
+      enabled: true
+      mode: "with_start"
+      text: "BedWars"
+      offset-seconds: 0
+
+  spawn:
+    gamemode: "CityBuild"
+
+    discord-rpc:
+      enabled: true
+      mode: "simple"
+      text: "CityBuild"
+      offset-seconds: 0

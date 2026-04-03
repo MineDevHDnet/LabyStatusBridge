@@ -1,0 +1,6 @@
+name: LabyStatusBridge
+version: 1.0.0
+main: net.minedevhd.labybridge.LabyStatus
+api-version: '1.21'
+depend: [LabyModServerAPI]
+author: MineDev_HD
